@@ -1,0 +1,23 @@
+{
+    "tab-0": "Lessons",
+    "tab-1": "Demo",
+    "tab-2": "Downloads",
+    "lesson_page-p-0": "When we have to travel long distances, we want to get from one place to another as quickly as possible. This challenge of precise route planning was and is faced by people long ago as well as today. But can quantum physics take this work off our hands?",
+    "lesson_page-p-1": "This course is a comprehensive guide to the quantum mechanical approach to this age-old optimization problem. You will learn:",
+    "lesson_page-p-2": "If you're looking for further information, check out",
+    "lesson_page-li-0": "What graphs are and how to perform calculations on them",
+    "lesson_page-li-1": "How QUBO problems are constructed",
+    "lesson_page-li-2": "How the Traveling Salesman Problem can be represented as a Hamiltonian for quantum annealers",
+    "lesson_page-li-3": "What the advantages and drawbacks of this method are",
+    "lesson_page-li-4": "How to perform pathfinding on your own graphs",
+    "lesson_page-Link": "the project's GitHub repo",
+    "lesson_page-strong": "Have fun learning!",
+    "lesson_page-h2-0": "Chapter 1",
+    "lesson_page-h2-1": "Chapter 2",
+    "lesson_page-h2-2": "Chapter 3",
+    "lesson_page-h2-3": "Chapter 4",
+    "lesson_page-h2-4": "Chapter 5",
+    "button-0": "Start",
+    "button-1": "Download",
+    "footer": "Created with"
+}
