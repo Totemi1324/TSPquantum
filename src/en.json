@@ -29,6 +29,17 @@
         "h3-0": "A solution approach: Controlling the embedding",
         "Link-0": "official documentation"
     },
+    "lesson-xxxxy": {
+        "h2-0": "Possible improvements and optimizations",
+        "p-0": "The presentation and evaluation of the method is completed; however, it should be considered more as a basis for further algorithmic approaches of this kind and can be further optimized and extended with a few adjustments.",
+        "p-1": "Since TSP solutions are closed loops that visit every city, the starting point can be set arbitrarily. So in theory, if we take this decision away from the quantum annealer and set the starting point to, say, <span class=\"emphasis\">A</span>, the first row and column of the Tour matrix can be omitted, since this city is guaranteed not to be visited in the rest of the path:",
+        "p-2": "In addition, the cost function needs to be adjusted so the path from <span class=\"emphasis\">A</span> to <span class=\"emphasis\">B</span>, <span class=\"emphasis\">A</span> to <span class=\"emphasis\">C</span> etc. is only dependent on the second node visited. This approach reduces the size of the Tour Matrix by 1, meaning the number of cities the annealer can find a solution for can be increased by 1 beyond its normal computing capability. However, these and other optimizations are only worthwhile in the long term if they can actually reduce the number of non-zero entries in the Hamiltonian.",
+        "p-3": "To make the algorithm more applicable for real-life situations, it would also be possible to extend it beyond the scope of the traditional Traveling Salesman Problem for <i>incomplete graphs</i> (where not all nodes are interconnected) and <i>directed graphs</i> (where certain edges can only be traversed in one direction or have different costs depending on the traversing direction):",
+        "p-4": "If a connection between a pair of cities doesn't exists (for example because of a road network layout), the quantum annealer has to be discouraged at all costs from incorporating it in the solution. To represent a non-existent edge, you therefore could assign a massive punishment to it so that the lowest cost is never reached if it's part of the tour. In mathematical literature, this is commonly expressed with an \"&#8734;\" (infinity) symbol, but in our case, a high integer number is more applicable.",
+        "p-5": "To represent different costs at different traversing directions in a directed graph, you only have to differentiate between the order the nodes can be visited when formulating the QUBO equation. In the example below, the cost function has different values depending on whether the path leads from A to C or from C to A:",
+        "p-6": "The previous method can be applied to the case when a connection exists only in one direction: The other direction is assigned a high cost. It should be noted, however, that in the case of incomplete and directed graphs, the quantum annealer can only output a valid solution if a Hamiltonian cycle actually exists.",
+        "i-0": "Examples of an incomplete graph (left) and a directed graph (right)"
+    },
     "button-0": "Start",
     "button-1": "Download",
     "footer": "Created with"
